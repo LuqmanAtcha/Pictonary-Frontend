@@ -43,7 +43,7 @@ function Signup() {
         password: formData.password
       });
       alert("✅ Registration successful!");
-      navigate("/signin");
+      //navigate("/signin");
     } catch (err) {
       const errorMsg = err.response?.data?.error || "Registration failed.";
       alert(errorMsg); // You could use toast UI later instead
